@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/login/" path="/login/" id="a3deb30d-5586-41a1-96d5-a9fd370a69f0">
+  <con:settings id="16996a9e-8877-403b-a533-a8bff3cc270f">
+    <con:setting id="a3deb30d-5586-41a1-96d5-a9fd370a69f0fileName">%2Flogin%2F</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="0e8f314c-16ee-4153-9272-3c27314ae3b8" method="GET">
+    <con:description>Login to user account</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>username</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The user name for login</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>password</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The password for login in clear text</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="f7375548-7c7c-4c27-86cd-07541453e435" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

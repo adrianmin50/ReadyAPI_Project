@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="Weather" path="/data/2.5/weather" id="fff2f1a3-fa69-4b24-9a63-920e052a8d5c">
+  <con:settings id="3d8d6859-b3b5-483f-b1a8-3eac76d0f850">
+    <con:setting id="fff2f1a3-fa69-4b24-9a63-920e052a8d5cfileName">Weather</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Weather" id="e91620a4-b092-4bbe-b51d-92261ca6dc0a" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>q</con:name>
+        <con:value>London,uk</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>London,uk</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>APPID</con:name>
+        <con:value>fd2e9a815ae8665784e2f7a732260870</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>fd2e9a815ae8665784e2f7a732260870</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:weat="http://api.openweathermap.org/data/2.5/weather">weat:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="41a65885-84a8-4403-8712-e2db1307028b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://api.openweathermap.org</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="q" value="London,uk"/>
+        <con:entry key="APPID" value="fd2e9a815ae8665784e2f7a732260870"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>q</con:entry>
+        <con:entry>APPID</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

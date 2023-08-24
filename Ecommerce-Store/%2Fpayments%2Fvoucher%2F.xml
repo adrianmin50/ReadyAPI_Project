@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/payments/voucher/" path="/payments/voucher/" id="d6bb70e1-73e0-4d99-9968-494aa3b02a60">
+  <con:settings id="9ed435b0-f2e2-48dd-9e03-2d1261222aa8">
+    <con:setting id="d6bb70e1-73e0-4d99-9968-494aa3b02a60fileName">%2Fpayments%2Fvoucher%2F</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="POST" id="bada798b-400b-4f3f-b974-0a606413a5ab" method="POST">
+    <con:description>Creates a payment using voucher</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Authorization</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Token used for authentication</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="bccab70c-7589-4b20-9c88-098e873a13ef" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:request>{\r
+  "voucer_code" : 33,\r
+  "purchase_date" : "January 2020",\r
+  "expiry_date" : "December 2020"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>Authorization</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

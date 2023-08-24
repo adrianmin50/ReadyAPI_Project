@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="f4969a4e-86d2-49b6-92c6-8e8acd1ab237" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase1" searchProperties="true" timeout="0" maxResults="0">
+  <con:settings id="93445e44-b21c-4de7-899b-23af5fd668ad">
+    <con:setting id="f4969a4e-86d2-49b6-92c6-8e8acd1ab237fileName">TestCase1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="79af54ff-2980-4ac8-8bf7-5ac5a3665012">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="http://api.openweathermap.org" resourcePath="/data/2.5/weather" methodName="Weather" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="41a65885-84a8-4403-8712-e2db1307028b" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.openweathermap.org</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.openweathermap.org/data/2.5/weather</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="0fd15259-fac7-4791-8df4-5cd98aeee1fd" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="da4be5d4-0061-4cd1-80aa-7c5a0e7812e3" name="Response SLA" disabled="true">
+          <con:configuration>
+            <SLA>300</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="q" value="Galway"/>
+          <con:entry key="APPID" value="fd2e9a815ae8665784e2f7a732260870"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>q</con:entry>
+          <con:entry>APPID</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

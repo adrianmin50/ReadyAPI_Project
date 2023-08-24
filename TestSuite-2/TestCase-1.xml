@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="5d25c11e-b24c-4016-9b9e-49f4bef0b920" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true">
+  <con:settings id="11eae3fc-4e27-4efb-b4ba-d31c01e4dac5">
+    <con:setting id="5d25c11e-b24c-4016-9b9e-49f4bef0b920fileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="GET - Request 1" id="92d9b3d2-6635-44c0-b413-9d8b82ef9edb">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Ecommerce Store" resourcePath="/Adrians_Org/ecommerce-store/1.1.0/get_products/{product_id}/" methodName="GET" xsi:type="con:RestRequestStep">
+      <con:restRequest name="GET - Request 1" id="3b5071cd-3a23-4872-b5cf-5f2b94bddfa8" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://virtserver.swaggerhub.com/Adrians_Org/ecommerce-store/1.1.0/get_products/1/</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters>
+          <con:entry key="Authorization" value="1"/>
+          <con:entry key="product_id" value="1"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

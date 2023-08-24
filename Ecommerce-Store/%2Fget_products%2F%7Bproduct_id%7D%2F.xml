@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/get_products/{product_id}/" path="/get_products/{product_id}/" id="5aa356d1-78ef-4dae-b95f-3de410981fdb">
+  <con:settings id="64d7ef80-22b5-497b-9fa1-10b86ae74017">
+    <con:setting id="5aa356d1-78ef-4dae-b95f-3de410981fdbfileName">%2Fget_products%2F%7Bproduct_id%7D%2F</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>product_id</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>id number of product</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GET" id="babe1ff2-73a2-4dfd-a8df-7f4daedea0da" method="GET">
+    <con:description>Get list of all products</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Authorization</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Token used for authentication</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json;charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element>Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="3b5071cd-3a23-4872-b5cf-5f2b94bddfa8" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

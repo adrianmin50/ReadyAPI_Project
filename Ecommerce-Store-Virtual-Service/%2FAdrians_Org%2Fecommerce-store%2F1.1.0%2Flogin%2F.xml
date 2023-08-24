@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/Adrians_Org/ecommerce-store/1.1.0/login/" method="GET" resourcePath="/Adrians_Org/ecommerce-store/1.1.0/login/" id="06aa895f-abb4-46e5-b8ab-37f8c3dac4ec">
+  <con:settings id="bbebbc84-92cf-49e6-b8e3-f797e9a9b299">
+    <con:setting id="06aa895f-abb4-46e5-b8ab-37f8c3dac4ecfileName">%2FAdrians_Org%2Fecommerce-store%2F1.1.0%2Flogin%2F</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="f22495b3-8e9e-4ee7-9b7d-eda5c841318f" httpResponseStatus="200" mediaType="application/json">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 2" id="d43a7917-2098-4cbf-ae50-318e9c2fb6ec" httpResponseStatus="200" mediaType="application/xml">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 3" id="fec165e3-1ce3-4f8e-83fb-371d81924f79" httpResponseStatus="404" mediaType="application/json">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 4" id="f9ecafb4-3e43-46bc-98df-76df2dbe83cd" httpResponseStatus="404" mediaType="application/xml">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

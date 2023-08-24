@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/Adrians_Org/ecommerce-store/1.1.0/logout/" method="GET" resourcePath="/Adrians_Org/ecommerce-store/1.1.0/logout/" id="b3000786-4e90-4437-b7ca-8ebb2cdc6991">
+  <con:settings id="063bbcea-b012-49d4-9755-8b548c068f1a">
+    <con:setting id="b3000786-4e90-4437-b7ca-8ebb2cdc6991fileName">%2FAdrians_Org%2Fecommerce-store%2F1.1.0%2Flogout%2F</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="455e0244-22fd-4ca1-8976-d30f66ef1bb4" httpResponseStatus="200" mediaType="application/json">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 2" id="fb0d2666-3ae3-4c57-8118-71c95a97b3bf" httpResponseStatus="200" mediaType="application/xml">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 3" id="272d9c94-de2d-478a-8eac-65a666737def" httpResponseStatus="404" mediaType="application/json">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 4" id="8a14c431-96ce-4385-a02a-4572bf187060" httpResponseStatus="404" mediaType="application/xml">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

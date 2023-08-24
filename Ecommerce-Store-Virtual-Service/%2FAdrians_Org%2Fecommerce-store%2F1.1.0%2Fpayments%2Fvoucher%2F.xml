@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/Adrians_Org/ecommerce-store/1.1.0/payments/voucher/" method="POST" resourcePath="/Adrians_Org/ecommerce-store/1.1.0/payments/voucher/" id="d43022fc-2a8d-4cde-b02b-f0a7aba9f863">
+  <con:settings id="528cc207-da63-49fb-8d91-17d6b0969693">
+    <con:setting id="d43022fc-2a8d-4cde-b02b-f0a7aba9f863fileName">%2FAdrians_Org%2Fecommerce-store%2F1.1.0%2Fpayments%2Fvoucher%2F</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="a5ba4f30-c339-4aa4-b5ac-ad9058f409e4" httpResponseStatus="200" mediaType="application/json">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 2" id="acb53d0f-2256-4aae-8ceb-b6bce09a2b1f" httpResponseStatus="400" mediaType="application/json">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 3" id="4a355822-edec-4059-aeba-5c671fbccf69" httpResponseStatus="404" mediaType="application/json">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

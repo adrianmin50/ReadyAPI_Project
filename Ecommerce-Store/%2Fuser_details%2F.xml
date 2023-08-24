@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/user_details/" path="/user_details/" id="f33cae96-b152-43a2-b2f6-cf2a0fddd2d1">
+  <con:settings id="d5a57699-3ffc-4c66-b6ef-c5b399d23e2c">
+    <con:setting id="f33cae96-b152-43a2-b2f6-cf2a0fddd2d1fileName">%2Fuser_details%2F</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="e4a4b43f-c6f0-4dc2-a1b8-eda60bab48a3" method="GET">
+    <con:description>View user details</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Authorization</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Token used for authentication</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="6a1f813d-f95c-4558-950b-561006e15e9b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

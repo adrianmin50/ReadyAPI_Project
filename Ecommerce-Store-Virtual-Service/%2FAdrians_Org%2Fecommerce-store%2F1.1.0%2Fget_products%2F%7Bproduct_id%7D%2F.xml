@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/Adrians_Org/ecommerce-store/1.1.0/get_products/{product_id}/" method="GET" resourcePath="/Adrians_Org/ecommerce-store/1.1.0/get_products/{product_id}/" id="751cf3d4-747a-468f-9178-af0e86155c2c">
+  <con:settings id="eeb9cc10-79ad-4011-bdbc-54a2fc85b92b">
+    <con:setting id="751cf3d4-747a-468f-9178-af0e86155c2cfileName">%2FAdrians_Org%2Fecommerce-store%2F1.1.0%2Fget_products%2F%7Bproduct_id%7D%2F</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="c6ebb9ff-ce44-48ca-abcd-29eb5e5a2a40" httpResponseStatus="200" mediaType="application/json">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 2" id="84a2ce8f-26ed-475b-9af5-bc1a9eed148a" httpResponseStatus="200" mediaType="application/xml">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 3" id="badf26c8-859d-4f94-9602-2c20c2f840e4" httpResponseStatus="400" mediaType="application/json">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 4" id="c1725cdd-b989-4907-938e-68ba4e0ddae1" httpResponseStatus="400" mediaType="application/xml">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 5" id="dfb312a1-ae0d-4518-b575-5f6ce3f5cea5" httpResponseStatus="404" mediaType="application/json">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 6" id="34c50446-a584-4b33-bc03-250c60e0e6be" httpResponseStatus="404" mediaType="application/xml">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 7" id="cfc34726-6556-4974-9cb8-37f2a51d47a7" httpResponseStatus="200" mediaType="application/json" encoding="utf-8">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

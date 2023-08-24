@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" xsi:type="con:RestService" id="4e327cdd-a0a1-4127-b1bb-89f101452ac6" wadlVersion="http://wadl.dev.java.net/2009/02" name="Ecommerce Store" type="rest" basePath="/Adrians_Org/ecommerce-store/1.1.0">
+  <con:description id="2fcee0ee-e2b7-412e-937f-8112208ec3de">## This is an API definition to be used in an automated design first workflow.
+   We will reuse this API definition to create our functional tests and a virtual API.</con:description>
+  <con:settings>
+    <con:setting id="4e327cdd-a0a1-4127-b1bb-89f101452ac6fileName">Ecommerce-Store</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart=""/>
+  <con:endpoints>
+    <con:endpoint>http://localhost:8088/</con:endpoint>
+    <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+    <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
+  </con:endpoints>
+</con:interface>
